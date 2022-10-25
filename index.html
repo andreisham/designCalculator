@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>РАСЧЕТ ТЕХНИЧЕСКОГО ЗАДАНИЯ</h1>
+    <section class="container">
+        <div class="row maket_mm">
+            <div>
+                <input name="width_mm" type="number" value="0">
+                <label for="width_mm">ширина/мм</label>
+            </div>
+            <p>*</p>
+            <div>
+                <input name="height_mm" type="number" value="0">
+                <label for="height_mm">высота/мм</label>
+            </div>
+            <p>*</p>
+            <div>
+                <input name="cost_mm" type="number" value="0">
+                <label for="cost_mm">цена за формат</label>
+            </div>
+            <p>+</p>
+            <div>
+                <input name="cost_design" type="number" value="0">
+                <label for="cost_design">цена за дизайн</label>
+            </div>
+            <p>=</p>
+            <div>
+                <input name="result_mm" type="number" value="0" class='results' disabled>
+                <label for="result_mm">сумма</label>
+            </div>
+        </div>
+        <div class="row maket_pxl">
+            <div>
+                <input name="width_pxl" type="number" value="0">
+                <label for="width_pxl">ширина/pxl</label>
+            </div>
+            <p>*</p>
+            <div>
+                <input name="height_pxl" type="number" value="0">
+                <label for="height_pxl">высота/pxl</label>
+            </div>
+            <p>*</p>
+            <div>
+                <input name="cost_pxl" type="number" value="0">
+                <label for="cost_pxl">цена за формат</label>
+            </div>
+            <p>+</p>
+            <div>
+                <input name="cost_design" type="number" value="0">
+                <label for="cost_design">цена за дизайн</label>
+            </div>
+            <p>=</p>
+            <div>
+                <input name="result_pxl" type="number" value="0" class='results' disabled>
+                <label for="result_pxl">сумма</label>
+            </div>
+        </div>
+        <div class="row pravki">
+            <div>
+                <input name="count_pravki" type="number" value="0">
+                <label for="count_pravki">кол-во правок</label>
+            </div>
+            <p>*</p>
+            <div>
+                <input name="cost_pravki" type="number" value="0">
+                <label for="cost_pravki">цена</label>
+            </div>
+            <p>=</p>
+            <div>
+                <input name="result_pravki" type="number" value="0" class='results' disabled>
+                <label for="result_pravki">сумма</label>
+            </div>
+        </div>
+        <div class="row dop_maket">
+            <div>
+                <input name="count_dop" type="number" value="0">
+                <label for="count_dop">кол-во доп макетов</label>
+            </div>
+            <p>*</p>
+            <div>
+                <input name="cost_dop" type="number" value="0">
+                <label for="cost_dop">цена</label>
+            </div>
+            <p>=</p>
+            <div>
+                <input name="result_dop" type="number" value="0" class='results' disabled>
+                <label for="result_dop">сумма</label>
+            </div>
+        </div>
+    </section>
+    <div class="result">
+        <input type="number" id="main_result" value="0" disabled>
+        <p>Итоговая цена за заказ</p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
